@@ -1,13 +1,48 @@
+import { getContents } from "./util.js";
+
 export default function createRouter() {
   const routes = {
     "": {
       page: "/pages/interest.html",
+      eventListener: () => {},
     },
     feed: {
       page: "/pages/feed.html",
-      eventListener: () => {
-        const title = document.getElementById("card_title");
-        title.addEventListener("click", () => console.log("clicked"));
+      eventListener: async () => {
+        await getContents();
+        const contents = await getContents();
+        console.log(contents.investment);
+        const cardHtml = contents.investment
+          .map((item) => {
+            return `
+            <section class="news_single_item_small">
+            <div>
+            <a href=${item.link}>
+              <div class="thumb">
+                <img src=${item.thumbnail} />
+              </div>
+              <ul class="info">
+                <li>${origin}</li>
+              </ul>
+              <div class="title">${item.title}</div>
+            </a>
+          </div>
+  
+          <div class="item_btns item_bottom">
+            <div><button type="button" class="btn_bookmark"></button></div>
+            <div>
+              <button type="button" class="btn_bookmark clicked"></button>
+            </div>
+          </div>
+  
+          <div class="edit_bg"></div>
+          </section>
+          `;
+          })
+          .join("");
+
+        const card = document.querySelector(".wrapper_block");
+        card.innerHTML = cardHtml;
       },
     },
   };
