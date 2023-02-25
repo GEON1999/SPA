@@ -1,145 +1,132 @@
-<!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="../style.css" rel="stylesheet" />
-    <title>관심사 및 북마크 마크업</title>
-  </head>
-  <body>
-    <div class="collect_wrapper">
-      <aside class="collect_sidebar">
-        <nav>
-          <ul>
-            <li class="selected">
-              <div>
-                <button>
-                  <i class="nav_icon interest"></i>
-                  관심사 선택
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button>
-                  <i class="nav_icon saved"></i>
-                  <a href="#bookmark">저장한 콘텐츠</a>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-      <section class="collect_container">
-        <div class="title_wrap">
-          <h2>관심사 선택</h2>
+<body>
+  <div class="collect_wrapper">
+    <aside class="collect_sidebar">
+      <nav>
+        <ul>
+          <li class="selected">
+            <div>
+              <button>
+                <i class="nav_icon interest"></i>
+                관심사 선택
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button>
+                <i class="nav_icon saved"></i>
+                <a href="#bookmark">저장한 콘텐츠</a>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="collect_container">
+      <div class="title_wrap">
+        <h2>관심사 선택</h2>
 
-          <p class="interest_notice">
-            <i class="icon"></i>
-            <strong>관심사를 선택</strong>해주세요! 선택한 관심사의 최신
-            이슈를&nbsp; <strong>내 피드에서 확인</strong>하실 수 있습니다.
-          </p>
-        </div>
+        <p class="interest_notice">
+          <i class="icon"></i>
+          <strong>관심사를 선택</strong>해주세요! 선택한 관심사의 최신
+          이슈를&nbsp; <strong>내 피드에서 확인</strong>하실 수 있습니다.
+        </p>
+      </div>
 
-        <div class="interest_list">
-          <ul>
-            <li>
-              <div>
-                <button class="interest_btn" id="popularity">
-                  <i class="icon popular"></i>
-                  인기
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button class="interest_btn" id="investment">
-                  <i class="icon investment"></i>
-                  투자
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button class="interest_btn" id="society">
-                  <i class="icon politics society"></i>
-                  사회
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button class="interest_btn" id="economy">
-                  <i class="icon economy"></i>
-                  경제
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button class="interest_btn" id="world">
-                  <i class="icon world"></i>
-                  국제
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button class="interest_btn" id="it">
-                  <i class="icon it"></i>
-                  IT/과학
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button class="interest_btn" id="culture">
-                  <i class="icon culture"></i>
-                  문화
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button class="interest_btn" id="entertainment">
-                  <i class="icon entertainment"></i>
-                  연예
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button class="interest_btn" id="sports">
-                  <i class="icon sports"></i>
-                  스포츠
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button class="interest_btn" id="biz">
-                  <i class="icon biz"></i>
-                  비즈
-                  <span class="blind"></span>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </body>
-</html>
+      <div class="interest_list">
+        <ul>
+          <li>
+            <div>
+              <button class="interest_btn" id="popularity">
+                <i class="icon popular"></i>
+                인기
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button class="interest_btn" id="investment">
+                <i class="icon investment"></i>
+                투자
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button class="interest_btn" id="society">
+                <i class="icon politics society"></i>
+                사회
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button class="interest_btn" id="economy">
+                <i class="icon economy"></i>
+                경제
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button class="interest_btn" id="world">
+                <i class="icon world"></i>
+                국제
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button class="interest_btn" id="it">
+                <i class="icon it"></i>
+                IT/과학
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button class="interest_btn" id="culture">
+                <i class="icon culture"></i>
+                문화
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button class="interest_btn" id="entertainment">
+                <i class="icon entertainment"></i>
+                연예
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button class="interest_btn" id="sports">
+                <i class="icon sports"></i>
+                스포츠
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button class="interest_btn" id="biz">
+                <i class="icon biz"></i>
+                비즈
+                <span class="blind"></span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
